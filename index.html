@@ -30,7 +30,7 @@
 
         <div class="row justify-content-center">
             <div class="col-10 col-md-5 collapse" id="usersGroup">
-                <p >&star; <span class="font-weight-bold lead"> Floriana</span>  (23.89%) = <span class="font-weight-bold lead" id="floriana"></span> </p>
+                <p >&star; <span class="font-weight-bold lead"> Monica</span>  (23.89%) = <span class="font-weight-bold lead" id="monica"></span> </p>
                 <p>&star; <span class="font-weight-bold lead"> Antonio</span> (24.52%) = <span class="font-weight-bold lead" id="antonio"></span> </p>
                 <p>&star; <span class="font-weight-bold lead"> Sara</span> (25.80%) = <span class="font-weight-bold lead" id="sara"></span> </p>
                 <p>&star; <span class="font-weight-bold lead"> Riccardo</span> (25.80%) = <span class="font-weight-bold lead" id="riccardo"></span> </p>
@@ -51,10 +51,10 @@
             })
 
             function monthCalculation(quarterAmount){
-                if(quarterAmount < 4000 || quarterAmount > 5500 )
+                if(quarterAmount < 5000 || quarterAmount > 6000 )
                     $("#warningMessage").show().delay( 4000 ).slideUp(500);
 
-                var users = ['floriana', 'antonio', 'riccardo', 'sara'];
+                var users = ['monica', 'antonio', 'riccardo', 'sara'];
                 var percentages = [23.89, 24.52, 25.80, 25.80];
                 for(var i = 0; i < users.length; i++){
                     $("#"+users[i]).text( " € " + (((quarterAmount * percentages[i])/100)/3).toFixed(2) );
